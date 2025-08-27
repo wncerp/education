@@ -1,0 +1,248 @@
+{
+ "doctype": "DocType",
+ "name": "PUC Student Applicant",
+ "module": "Education",
+ "autoname": "naming_series:",
+ "naming_rule": "By \"Naming Series\" field",
+ "title_field": "student_name_as_per_sslc",
+ "document_type": "Document",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "application_date",
+  "application_status",
+  "academic_year",
+  "academic_term",
+  "program",
+  "section",
+  "reservation_category",
+  "sats_no",
+  "languages_cum_combination",
+  "student_name_as_per_sslc",
+  "date_of_birth",
+  "gender",
+  "place_of_birth_village_town",
+  "place_of_birth_district",
+  "place_of_birth_taluk",
+  "place_of_birth_state",
+  "nationality",
+  "religion",
+  "caste",
+  "subcaste",
+  "student_mobile_number",
+  "student_email_id",
+  "aadhar_no",
+  "student_bank_account_no",
+  "permanent_address",
+  "local_address",
+  "father_name",
+  "mother_name",
+  "parent_guardian_address",
+  "parent_annual_income",
+  "income_certificate_enclosed",
+  "previous_school_college",
+  "image"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "PUC-APP-.YYYY.-",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "application_date",
+   "fieldtype": "Date",
+   "label": "Application Date",
+   "default": "Today"
+  },
+  {
+   "fieldname": "application_status",
+   "fieldtype": "Select",
+   "label": "Application Status",
+   "options": "Applied\nApproved\nRejected\nAdmitted",
+   "read_only": 1
+  },
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Link",
+   "label": "Academic Year",
+   "options": "Academic Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "academic_term",
+   "fieldtype": "Link",
+   "label": "Academic Term",
+   "options": "Academic Term"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "label": "Program",
+   "options": "Program"
+  },
+  {
+   "fieldname": "section",
+   "fieldtype": "Data",
+   "label": "Section"
+  },
+  {
+   "fieldname": "reservation_category",
+   "fieldtype": "Data",
+   "label": "Reservation Category"
+  },
+  {
+   "fieldname": "sats_no",
+   "fieldtype": "Data",
+   "label": "SATS Number"
+  },
+  {
+   "fieldname": "languages_cum_combination",
+   "fieldtype": "Data",
+   "label": "Languages-cum-Combination"
+  },
+  {
+   "fieldname": "student_name_as_per_sslc",
+   "fieldtype": "Data",
+   "label": "Name as per SSLC (CAPITAL)"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale\nOther"
+  },
+  {
+   "fieldname": "place_of_birth_village_town",
+   "fieldtype": "Data",
+   "label": "Place of Birth - Village/Town"
+  },
+  {
+   "fieldname": "place_of_birth_district",
+   "fieldtype": "Data",
+   "label": "District"
+  },
+  {
+   "fieldname": "place_of_birth_taluk",
+   "fieldtype": "Data",
+   "label": "Taluk"
+  },
+  {
+   "fieldname": "place_of_birth_state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Data",
+   "label": "Nationality"
+  },
+  {
+   "fieldname": "religion",
+   "fieldtype": "Data",
+   "label": "Religion"
+  },
+  {
+   "fieldname": "caste",
+   "fieldtype": "Data",
+   "label": "Caste"
+  },
+  {
+   "fieldname": "subcaste",
+   "fieldtype": "Data",
+   "label": "Subcaste"
+  },
+  {
+   "fieldname": "student_mobile_number",
+   "fieldtype": "Data",
+   "label": "Student Mobile Number"
+  },
+  {
+   "fieldname": "student_email_id",
+   "fieldtype": "Data",
+   "label": "Student Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "aadhar_no",
+   "fieldtype": "Data",
+   "label": "Aadhar Number"
+  },
+  {
+   "fieldname": "student_bank_account_no",
+   "fieldtype": "Data",
+   "label": "Student Bank Account Number"
+  },
+  {
+   "fieldname": "permanent_address",
+   "fieldtype": "Small Text",
+   "label": "Permanent Address"
+  },
+  {
+   "fieldname": "local_address",
+   "fieldtype": "Small Text",
+   "label": "Local Address"
+  },
+  {
+   "fieldname": "father_name",
+   "fieldtype": "Data",
+   "label": "Father's Name"
+  },
+  {
+   "fieldname": "mother_name",
+   "fieldtype": "Data",
+   "label": "Mother's Name"
+  },
+  {
+   "fieldname": "parent_guardian_address",
+   "fieldtype": "Small Text",
+   "label": "Parent/Guardian Name & Address"
+  },
+  {
+   "fieldname": "parent_annual_income",
+   "fieldtype": "Currency",
+   "label": "Parent/Guardian Annual Income"
+  },
+  {
+   "fieldname": "income_certificate_enclosed",
+   "fieldtype": "Select",
+   "label": "Income Certificate Enclosed",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "previous_school_college",
+   "fieldtype": "Data",
+   "label": "Last School/College Studied"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Photo"
+  }
+ ],
+ "permissions": [
+  {
+   "role": "Academics User",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "report": 1,
+   "export": 1,
+   "import": 1,
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
+
